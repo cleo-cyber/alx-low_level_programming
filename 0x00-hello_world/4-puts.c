@@ -1,9 +1,12 @@
 #include <stdio.h>
-int main(void) /*This is the entry point*/
+
+/**
+ * main -Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-
-puts("\"Programming is like building a multilingual puzzle");
-
-return (0); /*end of execution */
-
+	puts("\"Programming is like building a multilingual puzzle"); 
+	return (0); /*End of execution*/
 }
