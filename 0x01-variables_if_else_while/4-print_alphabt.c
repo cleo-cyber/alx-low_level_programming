@@ -22,7 +22,7 @@ int main(void)
 
 	{
 
-		if (i == 'e' && i == 'q')
+		if (i == 'e' || i == 'q')
 
 		{
 			continue;
@@ -33,6 +33,7 @@ int main(void)
 		{
 			putchar(i);
 		}
+
 
 	}
 
