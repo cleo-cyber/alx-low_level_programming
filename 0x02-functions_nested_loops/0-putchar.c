@@ -7,12 +7,11 @@
 int main(void)
 {
 	char word = "_putchar";
+	int i;
 
-	while (word)
+	for (i = 0; i < strlen(word); i++)
 	{
-		_putchar(word);
-
-		word++;
+		_putchar(word[i]);
 	}
 	_putchar("\n");
 
