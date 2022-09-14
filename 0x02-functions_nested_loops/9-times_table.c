@@ -11,7 +11,7 @@
  */
 void times_table(void)
 {
-	int ro, col, dig, prod, tens, ones;
+	int ro, col, dig;
 
 	for (ro = 0; ro <= 9; ro++)
 	{
@@ -21,16 +21,16 @@ void times_table(void)
 
 		for (col = 1; col <= 9; col++)
 		{
-			d = (ro * col);
-			if ((d / 10) > 0)
+			dig = (ro * col);
+			if ((dig / 10) > 0)
 			{
-				_putchar((d / 10) + '0');
+				_putchar((dig / 10) + '0');
 			}
 			else
 			{
 				_putchar(' ');
 			}
-			_putchar((d % 10) + '0');
+			_putchar((dig % 10) + '0');
 			if (col < 9)
 			{
 				_putchar(',');
