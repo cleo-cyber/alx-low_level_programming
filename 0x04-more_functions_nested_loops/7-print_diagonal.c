@@ -11,23 +11,21 @@
  */
 oid print_diagonal(int n)
 {
-	int length = 0;
-	int spaces;
-
 	if (n > 0)
 	{
-		for (length = 1; length < n; length++)
+		while (length < n)
 		{
-			for (spaces = 1; spaces < length; spaces++)
+			for (spaces = 0; spaces < length; spaces++)
 			{
 				_putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
+			length++;
 		}
-	}
-	else
-	{
-		_putchar('\n');
+		else
+		{
+			_putchar('\n');
+		}
 	}
 }
