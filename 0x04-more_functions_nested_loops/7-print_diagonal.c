@@ -6,10 +6,10 @@
  *
  * @n: input number of times '\' should be printed
  *
- * Return: a diagonal
+ * Return: void
  *
  */
-oid print_diagonal(int n)
+void oid print_diagonal(int n)
 {
 	if (n > 0)
 	{
