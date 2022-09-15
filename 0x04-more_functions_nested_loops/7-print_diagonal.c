@@ -9,22 +9,23 @@
  * Return: void
  *
  */
-void oid print_diagonal(int n)
+void print_diagonal(int n)
 {
-	if (n > 0)
+	int len, space;
+
+	if (n <= 0)
 	{
-		while (length < n)
+		_putchar('\n');
+	}
+	else
+	{
+		for (len = 1; len <= n; len++)
 		{
-			for (spaces = 0; spaces < length; spaces++)
+			for (space = 1; space < co; space++)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 			_putchar('\\');
-			_putchar('\n');
-			length++;
-		}
-		else
-		{
 			_putchar('\n');
 		}
 	}
